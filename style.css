@@ -192,33 +192,43 @@ blockquote span {
 
 .character-watermark {
     position: absolute;
-    right: -6%;
-    bottom: -8%;
+    right: -2%;
+    bottom: -3%;
 
-    width: 88%;
+    width: 72%;
+    max-width: 560px;
     height: auto;
 
-    opacity: 0.13;
-    filter: grayscale(100%) contrast(115%);
+    opacity: 0.22;
+
+    filter:
+        grayscale(100%)
+        contrast(125%)
+        brightness(58%);
+
+    mix-blend-mode: screen;
+
+    -webkit-mask-image: linear-gradient(
+        to top,
+        black 0%,
+        black 68%,
+        rgba(0, 0, 0, 0.72) 78%,
+        rgba(0, 0, 0, 0.28) 90%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to top,
+        black 0%,
+        black 68%,
+        rgba(0, 0, 0, 0.72) 78%,
+        rgba(0, 0, 0, 0.28) 90%,
+        transparent 100%
+    );
 
     z-index: 0;
     pointer-events: none;
-
-    -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(0,0,0,0.15) 12%,
-    black 35%,
-    black 100%
-);
-
-mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(0,0,0,0.15) 12%,
-    black 35%,
-    black 100%
-);
+}
 }
 
 .profile-right > *:not(.character-watermark) {
