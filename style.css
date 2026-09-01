@@ -203,6 +203,22 @@ blockquote span {
 
     z-index: 0;
     pointer-events: none;
+
+    -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0,0,0,0.15) 12%,
+    black 35%,
+    black 100%
+);
+
+mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0,0,0,0.15) 12%,
+    black 35%,
+    black 100%
+);
 }
 
 .profile-right > *:not(.character-watermark) {
