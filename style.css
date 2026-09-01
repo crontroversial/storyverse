@@ -183,3 +183,29 @@ blockquote span {
         gap: 8px;
     }
 }
+/* CHARACTER WATERMARK */
+
+.profile-right {
+    position: relative;
+    overflow: hidden;
+}
+
+.character-watermark {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 75%;
+    height: auto;
+
+    opacity: 0.18;
+    filter: grayscale(100%);
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+.profile-right > *:not(.character-watermark) {
+    position: relative;
+    z-index: 1;
+}
