@@ -192,14 +192,14 @@ blockquote span {
 
 .character-watermark {
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: -6%;
+    bottom: -8%;
 
-    width: 75%;
+    width: 88%;
     height: auto;
 
-    opacity: 0.18;
-    filter: grayscale(100%);
+    opacity: 0.13;
+    filter: grayscale(100%) contrast(115%);
 
     z-index: 0;
     pointer-events: none;
