@@ -193,10 +193,10 @@ blockquote span {
 .character-watermark {
     position: absolute;
 
-    right: -10%;
-    bottom: -8%;
+    right: -15%;
+    bottom: -10%;
 
-    width: 78%;
+    width: 72%;
     max-width: 600px;
     height: auto;
 
@@ -211,22 +211,22 @@ blockquote span {
     pointer-events: none;
 
     -webkit-mask-image: radial-gradient(
-        ellipse at 65% 65%,
-        black 0%,
-        black 38%,
-        rgba(0, 0, 0, 0.85) 52%,
-        rgba(0, 0, 0, 0.35) 68%,
-        transparent 82%
-    );
+    ellipse at 70% 88%,
+    black 0%,
+    black 35%,
+    rgba(0, 0, 0, 0.75) 48%,
+    rgba(0, 0, 0, 0.25) 60%,
+    transparent 72%
+);
 
-    mask-image: radial-gradient(
-        ellipse at 65% 65%,
-        black 0%,
-        black 38%,
-        rgba(0, 0, 0, 0.85) 52%,
-        rgba(0, 0, 0, 0.35) 68%,
-        transparent 82%
-    );
+mask-image: radial-gradient(
+    ellipse at 70% 88%,
+    black 0%,
+    black 35%,
+    rgba(0, 0, 0, 0.75) 48%,
+    rgba(0, 0, 0, 0.25) 60%,
+    transparent 72%
+);
 }
 
 .profile-right > *:not(.character-watermark) {
