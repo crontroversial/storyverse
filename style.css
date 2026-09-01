@@ -1,0 +1,41 @@
+body {
+    background-color: #111111;
+    color: #f2f2f2;
+    font-family: monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 120px;
+    font-size: 48px;
+    letter-spacing: 4px;
+}
+
+p {
+    color: #999999;
+    margin-bottom: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: transparent;
+    color: #f2f2f2;
+    border: 1px solid #555555;
+    padding: 14px 24px;
+    font-family: monospace;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f2f2f2;
+    color: #111111;
+}
