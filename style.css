@@ -39,3 +39,147 @@ button:hover {
     background-color: #f2f2f2;
     color: #111111;
 }
+/* JONAS PROFILE */
+
+.profile-page {
+    background: #0d0d0d;
+    color: #e8e8e8;
+    text-align: left;
+}
+
+.profile-spread {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.profile-left,
+.profile-right {
+    padding: 60px 70px;
+}
+
+.profile-left {
+    border-right: 1px solid #2c2c2c;
+}
+
+.back-link {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.back-link:hover {
+    color: #ffffff;
+}
+
+.eyebrow {
+    margin-top: 55px;
+    margin-bottom: 20px;
+    color: #777777;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.profile-left h1 {
+    margin: 0;
+    font-size: 58px;
+    letter-spacing: 5px;
+}
+
+.alias {
+    margin-top: 12px;
+    font-size: 22px;
+    color: #9a9a9a;
+}
+
+.tags {
+    margin-top: 38px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #333333;
+    letter-spacing: 4px;
+    color: #b3b3b3;
+}
+
+.profile-text {
+    margin-top: 38px;
+    max-width: 580px;
+    line-height: 1.8;
+    color: #c7c7c7;
+}
+
+.profile-text p {
+    margin-bottom: 24px;
+}
+
+.profile-right h2 {
+    margin-top: 40px;
+    margin-bottom: 28px;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+.facts {
+    border-top: 1px solid #333333;
+}
+
+.fact {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 25px;
+    padding: 18px 0;
+    border-bottom: 1px solid #292929;
+}
+
+.fact-label {
+    color: #8c8c8c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+blockquote {
+    margin: 70px 0 0;
+    padding: 35px 20px 0;
+    border-top: 1px solid #333333;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #dedede;
+}
+
+blockquote span {
+    display: block;
+    margin-top: 20px;
+    color: #777777;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+    .profile-spread {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-left {
+        border-right: none;
+        border-bottom: 1px solid #2c2c2c;
+    }
+
+    .profile-left,
+    .profile-right {
+        padding: 40px 28px;
+    }
+
+    .profile-left h1 {
+        font-size: 40px;
+    }
+
+    .fact {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
