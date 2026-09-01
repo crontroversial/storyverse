@@ -200,13 +200,13 @@ blockquote span {
     max-width: 600px;
     height: auto;
 
-    opacity: 0.55;
+    opacity: 0.38;
 
     filter:
         grayscale(100%)
-        brightness(80%)
-        contrast(125%);
-mix-blend-mode: multiply;
+        brightness(62%)
+        contrast(130%);
+
     z-index: 0;
     pointer-events: none;
 
